@@ -17,7 +17,7 @@ function checkIdExistsInProject(req, res, next) {
     }
   });
   if (!present) {
-    return res.status(400).json({ error: "This ID not present in projects" });
+    return res.status(400).json({ error: "Este ID não esta presente no projeto" });
   }
   return next();
 }
